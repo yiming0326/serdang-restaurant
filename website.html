@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>沙登小厨海鲜饭店 | Serdang Home Cook Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #c0392b;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://i.imgur.com/Lq6cYMa.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .dish {
+      background-color: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .dish .info {
+      padding: 1rem;
+    }
+    .footer {
+      background-color: #f9e7d1;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="沙登小厨 Logo" />
+    <nav>
+      <a href="#">首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#menu">菜品展示</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>舌尖上的美味，家的味道！</h1>
+    <button>立即订餐</button>
+  </div>
+
+  <section id="about">
+    <h2>关于我们</h2>
+    <p>沙登小厨用心烹饪每一道菜，致力于为本地顾客带来家的味道。我们精选最新鲜的食材，融合传统与创新的烹饪方式，为每一位顾客奉上美味与温暖。</p>
+  </section>
+
+  <section id="menu">
+    <h2>菜品展示</h2>
+    <div class="menu-items">
+      <div class="dish">
+        <img src="https://i.imgur.com/YsxI5fl.jpeg" alt="宫保鸡丁" />
+        <div class="info">
+          <h3>宫保鸡丁</h3>
+          <p>麻辣开胃，精选鸡腿肉炒制。</p>
+          <strong>¥28</strong>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="https://i.imgur.com/UcS6ZC0.jpeg" alt="清蒸鲈鱼" />
+        <div class="info">
+          <h3>清蒸鲈鱼</h3>
+          <p>原味清鲜，佐以姜葱酱油。</p>
+          <strong>¥39</strong>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="https://i.imgur.com/IhCE7q9.jpeg" alt="香辣小龙虾" />
+        <div class="info">
+          <h3>香辣小龙虾</h3>
+          <p>重口推荐，鲜香麻辣。</p>
+          <strong>¥68</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我们</h2>
+    <p>电话：020-5582680</p>
+    <p>地址：沙美街123号，营业时间：11:00–21:30（周一至日）</p>
+  </section>
+
+  <div class="footer">
+    版权所有 © 2025 沙登小厨海鲜饭店
+  </div>
+</body>
+</html>
